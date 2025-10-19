@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Testes</title>
+    <link rel="icon" href="assets/img/logo_pucminas.png" type="image/png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/themes/adaptive.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="atividade1.html">Atividade 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="atividade2.html">Atividade 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="atividade3.html">Atividade 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="atividade4.html">Atividade 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="atividade5.html">Atividade 5</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <!-- 1ª Questão  -->
+        <div class="row my-4">
+            <h5> 1 - Análise de investimentos (variação de valores a juros compostos) M=C⋅(1+i)t <br>
+                <span>1.1 Dados de entrada<br>
+                <span>1.1.1 Capital inicial (em reais)<br>
+                <span>1.1.2 Tempo de aplicação<br>
+                <span>1.1.3 Taxa de aplicação (dada em porcentagem)<br>
+                <span>1.1.4 Taxa estimada para o IPCA (indicador de inflação, em porcentagem)<br>
+                <br>
+                1.2 Saída<br>
+                <span>1.2.1 Montante final com aplicação da taxa de aplicação<br>
+                <span>1.2.2 Montante final com aplicação do IPCA<br>
+                <span>1.2.3 Diferença entre os montantes dos itens anteriores, em reais<br>
+                <span>1.2.4 Gráfico com duas curvas mostrando evolução do montante de acordo com a taxa<br>
+                <span> de aplicação e IPCA, dividindo o tempo de aplicação em, pelo menos, 10 partes.
+            </h5>
+
+        </div>
+
+        <figure class="highcharts-figure">
+
+
+            <div id="ex1">
+                <div class="controles">
+                    <div class="box">
+                        <p>Digite o Capital inicial (em reais)</p>
+                        <input type="text" class="form-control" id="capital" placeholder="Capital Inicial">
+                    </div>
+
+                    <div class="box">
+                        <p>Digite o Tempo de aplicação (em mês)</p>
+                        <input type="text" class="form-control" id="tempo" placeholder="Tempo de Aplicação">
+                    </div>
+
+                    <div class="box">
+                        <p>Digite a Taxa de aplicação (em porcentagem)</p>
+                        <input type="text" class="form-control" id="taxa" placeholder="Taxa de Aplicação">
+                    </div>
+
+                    <div class="box">
+                        <p>Digite a Taxa estimada para o IPCA</p>
+                        <input type="text" class="form-control" id="taxaIPCA" placeholder="Taxa do IPCA">
+                    </div>
+
+                    <button onclick="mostrarDado()">Enviar</button>
+
+                    <div id="resultado">
+                        <p id="res-montante"></p>
+                        <p id="res-montanteIPCA"></p>
+                        <p id="diferenca"></p>
+                    </div>
+                    
+                </div>
+                <div id="container"></div>
+
+            </div>
+        </figure>
+
+    </div>
+    <script src="assets/js/atv1.js"></script>
+</body>
+</html>

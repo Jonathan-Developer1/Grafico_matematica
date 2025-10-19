@@ -1,0 +1,151 @@
+.container{
+    margin-top: 40px;
+}
+.navbar{
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    padding: 30px;
+}
+.nav-item{
+    margin-left: 50px;
+    font-size: 22px;
+    
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(115, 91, 255)
+}
+
+#ex1{
+    margin: 70px 20px;
+}
+
+.box{
+    margin: 25px 0px;
+}
+
+.box input{
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.box p{
+    margin: 0;
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}
+
+button:hover{
+    
+    background-color: rgb(38, 114, 255);
+    transition: 1s;
+}
+
+#ex1 {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+#controles {
+    width: 350px; 
+}
+
+#container {
+    flex: 1; 
+    height: 500px;
+}
+
+#resultado{
+    margin: 50px 0;
+}
+
+#resultado p{
+    font-weight: bold;
+}
+
+span{
+    padding-left: 30px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+.row{
+    margin-top: 50px;
+}
+
+* {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    margin: 1em 0;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid var(--highcharts-neutral-color-10, #e6e6e6);
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: var(--highcharts-neutral-color-60, #666);
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tbody tr:nth-child(even) {
+    background: var(--highcharts-neutral-color-3, #f7f7f7);
+}
+
+.highcharts-description {
+    margin: 0.3rem 10px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #141414;
+        color: #ffffff;
+    }
+}

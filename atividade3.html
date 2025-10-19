@@ -1,0 +1,116 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+           <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Testes</title>
+    <link rel="icon" href="assets/img/logo_pucminas.png" type="image/png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/themes/adaptive.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="atividade1.html">Atividade 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="atividade2.html">Atividade 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="atividade3.html">Atividade 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="atividade4.html">Atividade 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="atividade5.html">Atividade 5</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <!-- 1ª Questão  -->
+            <div class="row my-4">
+                <h5> 3 - Imposto de Renda Retido na Fonte<br> 
+                    3.1 Dados de entrada<br>
+                    <span>3.1.1 Salário Bruto<br>
+                    <span>3.1.2 Número de dependentes<br>
+                    <br>
+                    3.2 Saída<br>
+                    <span>3.2.1 Valor da base de cálculo<br>
+                    <span>3.2.2 Valor do Imposto de Renda Retido na Fonte a ser recolhido<br>
+                    <span>3.2.3 Gráfico genérico com evolução do valor a pagar para todas as faixas, destacando<br>
+                    <span2>o valor do IRRF calculado<br>
+                    <span>3.2.4 Gráfico genérico com evolução do valor a pagar para todas as faixas, destacando<br>
+                    <span2>o valor do IRRF calculado, caso não houvesse a parcela a deduzir<br>
+                    <br>
+                    Obs: Para simplificar, consideraremos apenas a dedução por dependentes para determinação da base<br>
+                    de cálculo.<br>
+                    <br>
+                    Tabela progressiva do IR para a base de cálculo mensal do IR no exercício de 2025<br>
+                    -------------------------------------------------------------------------------------------------------------<br>
+                    Base de Cálculo (R$)<span2><span2><span> Alíquota (%)<span2><span2> Dedução do IRRF (R$)<br>
+                    -------------------------------------------------------------------------------------------------------------<br>
+                    Até R$ 2.259,20 <span2><span2><span><span> zero <span2><span2><span><span><span>zero<br>
+                    De R$ 2.259,21 até R$ 2.826,65<span><span><span> 7,5%<span2><span2><span2>R$ 169,44<br>
+                    De R$ 2.826,66 até R$ 3.751,05<span><span><span> 15% <span2><span2><span2> R$ 381,44<br>
+                    De R$ 3.751,06 até R$ 4.664,68<span><span><span> 22,5%<span2><span2><span2>R$ 662,77<br>
+                    Acima de R$ 4.664,68 <span2><span><span><span>27,5% <span2><span2><span><span>R$ 896,00<br>
+                    -------------------------------------------------------------------------------------------------------------<br>
+                    Dedução mensal por dependente: R$ 189,59
+
+                </h5>
+
+                <!-- Colar solução aqui -->
+    <figure class="highcharts-figure">
+
+
+                <div id="ex3">
+                    <div class="controles">
+                        <div class="box">
+                            <p>Digite o salario Bruto (em reais)</p>
+                            <input type="text" class="form-control" id="salarioBruto" placeholder="Salario Bruto">
+                        </div>
+                        
+                        <div class="box">
+                            <p>Digite o numero de dependentes</p>
+                            <input type="text" class="form-control" id="numeroDependentes" placeholder="Numero dependentes">
+                        </div>
+
+                        <button onclick="mostrarDado()">Enviar</button>
+
+                        <div id="resultado">
+                            <p id="res-valorBase"></p>
+                            <p id="res-valorIRRF"></p>
+                            <p id="res-montanteIPCA"></p>
+                        </div>
+                        
+                    </div>
+                    <div id="graficoIRRF"></div>
+                    <div id="EvolucaoIRRF"></div>
+
+                </div>
+            </figure>
+                <!-- Colar solução aqui -->
+            </div>
+
+        </div>
+        <script src="assets/js/atv3.js"></script>
+                <!-- Colar solução aqui -->
+
+            </div>
+            
+
+    </body>
+
+    </html>

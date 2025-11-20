@@ -51,26 +51,46 @@
             <!-- Colar solução aqui -->
             <div class="row">
                 <div class="col-3">
-                    <label for="coordenada_x" class="form-label">Digite a coordenada x</label>
-                    <input id="coordenada_x" type="text" class="form-control" placeholder="Digite a coordenada x">
+                    <label for="coordenada_x" class="form-label">Digite a coordenada x do primeiro ponto</label>
+                    <input id="coordenada_x_primeiro_ponto" type="text" class="form-control" placeholder="Digite a coordenada x">
                 </div>
                 <div class="col-3">
-                    <label for="coordenada_y" class="form-label">Digite a coordenada y</label>
-                    <input id="coordenada_y"type="text" class="form-control" placeholder="Digite a coordenada y">
+                    <label for="coordenada_y" class="form-label">Digite a coordenada y do primeiro ponto</label>
+                    <input id="coordenada_y_primeiro_ponto"type="text" class="form-control" placeholder="Digite a coordenada y">
                 </div>
-                <div class="col-2">
-                    <br />
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </div>
-                <div class="col-5">
-                    <br />
-                    <span> Resultado da Questão 1</span>
-                </div>
+               
             </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="coordenada_x" class="form-label">Digite a coordenada x do segundo ponto</label>
+                    <input id="coordenada_x_segundo_ponto" type="text" class="form-control" placeholder="Digite a coordenada x">
+                </div>
+                <div class="col-3">
+                    <label for="coordenada_y" class="form-label">Digite a coordenada y do segundo ponto</label>
+                    <input id="coordenada_y_segundo_ponto" type="text" class="form-control" placeholder="Digite a coordenada x">
+                </div>
+               
+            </div>
+             <div class="col-2">
+                    <br />
+                    <button type="button" class="btn btn-primary" onclick="calcular()">Enviar</button>
+                </div>
             <!-- Colar solução aqui -->
+        </div>
+        <div>
+            <p id="funcao">
+            </p>
+              <p id="abscissas">
+                    
+                </p>
+                <p id="ordenadas"></p>
+        </div>
+        <div>
+            <canvas id="myChart"></canvas>
         </div>
 
     </div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script src="assets/js/atv4.js"></script>
 </html>

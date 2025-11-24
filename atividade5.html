@@ -48,17 +48,6 @@
                 <span>5.2.2 Tabela com os valores de x, f(x) e da tolerância<br>
                 <span>5.2.3 Resultado final<br>
                 <br>
-                -----------------------------------------------------------------------------<br>
-                <span>i<span>|<span>xinicial<span>|<span>xmedio<span>|<span>xfinal<span>|<span>f(xinicial)<span>|<span>f(xmedio)<span>|<span>f(xfinal)<span>|<span>tolerância<br>
-                -----------------------------------------------------------------------------<br>
-                <span>1<br>
-                -----------------------------------------------------------------------------<br>
-                <span>2<br>
-                -----------------------------------------------------------------------------<br>
-                <span>3<br>
-                -----------------------------------------------------------------------------<br>
-                <span>...<br>
-                -----------------------------------------------------------------------------<br>
                 <br>
                 Tolerância será dada pela expressão: tol=|xi+1−xi|
 
@@ -68,22 +57,52 @@
             <!-- Colar solução aqui -->
             <div class="row">
                 <div class="col-3">
-                    <label for="nome_usuario" class="form-label">Nome:</label>
-                    <input type="text" class="form-control" placeholder="informe seu nome">
+                    <label for="xi" class="form-label">Digite o x inicial (xi):</label>
+                    <input id="xi" type="text" class="form-control" placeholder="Digite o xi inicial">
                 </div>
-                <div class="col-2">
+                <div class="col-3">
+                    <label for="xf" class="form-label">Digite o x final (xf):</label>
+                    <input id="xf"type="text" class="form-control" placeholder="Digite o xf final">
+                </div>
+                <div class="col-3">
+                    <label for="tol" class="form-label">Digite a tolerância:</label>
+                    <input id="tol"type="text" class="form-control" placeholder="Digite a tolerância">
+                </div>  
+                <div class="col-3">
+                    <label for="maxIter" class="form-label">Digite o maximo de interções:</label>
+                    <input id="maxIter"type="text" class="form-control" placeholder="Digite o maximo de interaçoes">
+                </div>  
+             <div class="col-2">
                     <br />
-                    <button type="button" class="btn btn-primary">Cumprimentar</button>
-                </div>
-                <div class="col-5">
-                    <br />
-                    <span> Resultado da Questão 1</span>
-                </div>
+                    <button type="button" class="btn btn-primary" onclick="calcularBissecao()">Enviar</button>
+                </div>                
             </div>
+            <div id="messages"></div>
+
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>i</th>
+                <th>xinicial</th>
+                <th>xmedio</th>
+                <th>xfinal</th>
+                <th>f(xinicial)</th>
+                <th>f(xmedio)</th>
+                <th>f(xfinal)</th>
+                <th>tolerância</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            </tbody>
+    </table>
+
+    <div id="finalResult"></div>
+
+</div>
             <!-- Colar solução aqui -->
         </div>
 
     </div>
 </body>
-
+<script src="assets/js/atv5.js"></script>
 </html>

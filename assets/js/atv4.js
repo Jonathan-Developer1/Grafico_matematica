@@ -3,7 +3,7 @@ function calcular()
 {
 
     
-    const xFirst = parseFloat(document.getElementById("coordenada_x_primeiro_ponto").value);
+const xFirst = parseFloat(document.getElementById("coordenada_x_primeiro_ponto").value);
 const yFirst = parseFloat(document.getElementById("coordenada_y_primeiro_ponto").value);
 const xSecond = parseFloat(document.getElementById("coordenada_x_segundo_ponto").value);
 const ySecond = parseFloat(document.getElementById("coordenada_y_segundo_ponto").value); 

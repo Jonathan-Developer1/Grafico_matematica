@@ -32,8 +32,8 @@ funcao.innerHTML = `Reta: y = ${a}x + ${b}`;
 
 const abcissasTexto = document.getElementById("abscissas");
 const ordenadasTexto = document.getElementById("ordenadas");
-abcissasTexto.innerHTML = `(${abcissas}, 0)`;
-ordenadasTexto.innerHTML = `(0, ${ordenadas})`;
+abcissasTexto.innerHTML = `Abcissas: (${abcissas}, 0)`;
+ordenadasTexto.innerHTML = `Ordenadas: (0, ${ordenadas})`;
 
 
 criarChart(xFirst,xSecond,yFirst,ySecond,a,b);

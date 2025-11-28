@@ -1,7 +1,21 @@
 //===============================================================
+
+
+
+
+//===============================================================
+//função geral
+function funcao(x) {
+  const a = parseInt(document.getElementById("a").value);
+const b = parseInt(document.getElementById("b").value);
+const c = parseInt(document.getElementById("c").value);
+
+  return Math.pow(x, a) - b * x + c;
+}
+
 //===============================================================
 //função a ser alterada
-function funcao(x) {
+function funcao1(x) {
   return Math.pow(x, 3) - 9 * x + 3;
 }
 //===============================================================

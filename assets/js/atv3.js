@@ -7,16 +7,9 @@ function mostrarDado() {
     return;
   }
 
-  // desconto INSS
-  let descontoInss;
-  if (salarioBruto <= 1518) descontoInss = salarioBruto * 0.075;
-  else if (salarioBruto <= 2826.65) descontoInss = salarioBruto * 0.09;
-  else if (salarioBruto <= 3751.06) descontoInss = salarioBruto * 0.12;
-  else if (salarioBruto <= 4664.68) descontoInss = salarioBruto * 0.14;
-  else descontoInss = 4664.68 * 0.14;
 
   // Base de cálculo 
-  const baseCalculo = Math.max(0, salarioBruto - descontoInss - numeroDependentes * 189.59);
+  const baseCalculo = Math.max(0, salarioBruto - numeroDependentes * 189.59);
 
   // IRRF
   let IR = 0;

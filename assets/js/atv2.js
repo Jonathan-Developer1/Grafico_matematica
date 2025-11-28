@@ -26,7 +26,7 @@ function mostrarDado() {
     dadosMontante.push(parseFloat(valorAtual.toFixed(2)));
 
     // Calcula o valor corrigido pelo IPCA neste ponto do tempo
-    const valorAtualIPCA = capital * Math.pow(1 + taxaIPCA, tempoAtual);
+    const valorAtualIPCA = capital * Math.pow(1 + taxaIPCA, tempoAtual) + aporte*(Math.pow(1 + taxaIPCA, tempoAtual )-1)/taxaIPCA;
     dadosMontanteIPCA.push(parseFloat(valorAtualIPCA.toFixed(2)));
 }
 
